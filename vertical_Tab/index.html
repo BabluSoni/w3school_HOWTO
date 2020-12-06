@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verticl Tabs in javaScript</title>
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/bd184c06f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <!-- Tabs Buttons -->
+        <div class="tab_btn_grp">
+            <button id="default" class="tab_btn" onclick="Mytabs('home')">Home <i class="fas fa-angle-right"></i></button>
+            <button class="tab_btn" onclick="Mytabs('contact')">Contact <i class="fas fa-angle-right"></i></button>
+            <button class="tab_btn" onclick="Mytabs('services')">Services <i class="fas fa-angle-right"></i></button>
+            <button class="tab_btn" onclick="Mytabs('about')">About <i class="fas fa-angle-right"></i></button>
+        </div>
+
+        <div class="content_grp">
+            <!-- Tabs contaents -->
+            <div id="home" class="tabs_content">
+                <span class="close" onclick="this.parentElement.style.display='none'">&times</span>
+                <h1>Home page</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus modi cumque exercitationem porro, saepe nobis nostrum doloribus? Aliquid veritatis architecto totam corrupti illum deleniti saepe soluta sint non harum. Facere.</p>
+            </div>
+            <div id="contact" class="tabs_content">
+                <span class="close" onclick="this.parentElement.style.display='none'">&times</span>
+                <h1>Contact page</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus modi cumque exercitationem porro, saepe nobis nostrum doloribus? Aliquid veritatis architecto totam corrupti illum deleniti saepe soluta sint non harum. Facere.</p>
+            </div>
+            <div id="services" class="tabs_content">
+                <span class="close" onclick="this.parentElement.style.display='none'">&times</span>
+                <h1>Service page</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus modi cumque exercitationem porro, saepe nobis nostrum doloribus? Aliquid veritatis architecto totam corrupti illum deleniti saepe soluta sint non harum. Facere.</p>
+            </div>
+            <div id="about" class="tabs_content">
+                <span class="close" onclick="this.parentElement.style.display='none'">&times</span>
+                <h1>About page</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus modi cumque exercitationem porro, saepe nobis nostrum doloribus? Aliquid veritatis architecto totam corrupti illum deleniti saepe soluta sint non harum. Facere.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

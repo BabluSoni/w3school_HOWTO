@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Header</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <div class="tab_content_grp">
+            <div id="delhi" class="tab_content">
+                <span class="close" onclick="this.parentElement.style.display='none'">&times</span>
+                <div class="content_text">
+                    <h1>Delhi</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, aspernatur?</p>
+                </div>
+            </div>
+            <div id="haryana" class="tab_content">
+                <span class="close" onclick="this.parentElement.style.display='none'">&times</span>
+                <div class="content_text">
+                    <h1>Haryana</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, aspernatur?</p>
+                </div>
+            </div>
+            <div id="manali" class="tab_content">
+                <span class="close" onclick="this.parentElement.style.display='none'">&times</span>
+                <div class="content_text">
+                    <h1>manali</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, aspernatur?</p>
+                </div>
+            </div>
+            <div id="bihar" class="tab_content">
+                <span class="close" onclick="this.parentElement.style.display='none'">&times</span>
+                <div class="content_text">
+                    <h1>bihar</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, aspernatur?</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab_btn_grp">
+            <button id="default" class="tab_btn" onclick="Mycity('delhi',this,'#f44336')">Delhi</button>
+            <button class="tab_btn" onclick="Mycity('haryana',this,'#4CAF50')">Haryana</button>
+            <button class="tab_btn" onclick="Mycity('manali',this,'#2196F3')">manali</button>
+            <button class="tab_btn" onclick="Mycity('bihar',this,'#ff5722')">bihar</button>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+
+</html>

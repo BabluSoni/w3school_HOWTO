@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/bd184c06f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <!-- Tabs buttons -->
+        <div class="tabs_btn_grp">
+            <button class="tabs_btn" onclick="Tabfun(event,'home')" id="defaultOpen"><i class="fas fa-home"></i></button>
+            <button class="tabs_btn" onclick="Tabfun(event,'shopping')"><i class="fas fa-shopping-bag"></i></button>
+            <button class="tabs_btn" onclick="Tabfun(event,'user')"><i class="fas fa-user"></i></button>
+            <button class="tabs_btn" onclick="Tabfun(event,'discount')"><i class="fa fa-tag"></i></button>
+            <button class="tabs_btn" onclick="Tabfun(event,'more')"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+
+        <!-- tabs contenyts -->
+        <div id="home" class="tabs_contents">
+            <span class="close" onclick="this.parentElement.style.display='none'">&times</span>
+            <h1>This is Home page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero suscipit quis nulla id deleniti maiores vel voluptatem dolore? Amet reprehenderit tenetur eos voluptatem assumenda omnis facere illo aperiam voluptatibus error!</p>
+        </div>
+        <div id="shopping" class="tabs_contents">
+            <span class="close" onclick="this.parentElement.style.display='none'">&times</span>
+            <h1>This is shopping page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero suscipit quis nulla id deleniti maiores vel voluptatem dolore? Amet reprehenderit tenetur eos voluptatem assumenda omnis facere illo aperiam voluptatibus error!</p>
+        </div>
+        <div id="user" class="tabs_contents">
+            <span class="close" onclick="this.parentElement.style.display='none'">&times</span>
+            <h1>This is user page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero suscipit quis nulla id deleniti maiores vel voluptatem dolore? Amet reprehenderit tenetur eos voluptatem assumenda omnis facere illo aperiam voluptatibus error!</p>
+        </div>
+        <div id="discount" class="tabs_contents">
+            <span class="close" onclick="this.parentElement.style.display='none'">&times</span>
+            <h1>This is discount page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero suscipit quis nulla id deleniti maiores vel voluptatem dolore? Amet reprehenderit tenetur eos voluptatem assumenda omnis facere illo aperiam voluptatibus error!</p>
+        </div>
+        <div id="more" class="tabs_contents">
+            <span class="close" onclick="this.parentElement.style.display='none'">&times</span>
+            <h1>This is more page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero suscipit quis nulla id deleniti maiores vel voluptatem dolore? Amet reprehenderit tenetur eos voluptatem assumenda omnis facere illo aperiam voluptatibus error!</p>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+
+</html>
